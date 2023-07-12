@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @house %>
+<h2>Rooms:</h2>
+<ul>
+  <% @house.rooms.each do |room| %>
+    <li>
+      <h3><%= room.name %></h3>
+      <p><%= room.description %></p>
+      <p>Price: <%= room.price %></p>
+      <p>Status: <%= room.status ? 'Available' : 'Occupied' %></p>
+      <%= link_to "Informations supplémentaires", house_room_path(room) %>
+    </li>
+  <% end %>
+</ul>
+
+<div>
+  <%= link_to "Back to houses", houses_path %>
+</div>

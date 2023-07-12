@@ -1,0 +1,96 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-alcamaya {
+  // justify-content: space-between;
+  background: rgba(76, 241, 76, 0.514);
+  display: flex;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-around;
+  width: 80%;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+  border-bottom: 1px solid green;
+}
+
+.navbar-alcamaya a {
+  text-decoration: none; /* Supprime l'effet de soulignement des liens */
+}
+
+.navbar-alcamaya a:visited {
+  color: black; /* Définit la couleur des liens déjà visités */
+}
+
+.footer-alcamaya {
+  background: rgba(76, 241, 76, 0.514);
+  display: flex;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-around;
+  width: 80%;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+  border-top: 1px solid green;
+}
+
+// .logo-home {
+//   display: flex;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+//   margin-bottom: 30px;
+//   position: relative;
+// }
+
+// .logo-home i {
+//   margin-right: 10px;
+//   width: 40px;
+// }
+
+// .logo-home p {
+//   // margin-left: 20px;
+//   text-align: left;
+//   position: absolute;
+//   left: 60px;
+// }
+
+.logo-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.logo-display .logo-home {
+  flex-grow: 1;
+  padding: 0 24px;
+}
+
+.logo-display p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.logo-display small {
+  color: #999999;
+  font-weight: bold;
+}
