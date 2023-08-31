@@ -2,6 +2,13 @@
 
 <%= render @room %>
 
+<!-- show.html.erb -->
+
+<!-- Boucle pour afficher les photos de la chambre -->
+<% @room.photos.each do |photo| %>
+  <%= image_tag photo.url %>
+<% end %>
+
 <div>
   <%= link_to "Back to rooms", houses_path %>
 </div>
