@@ -5,9 +5,8 @@
 <div id="rooms">
   <% @rooms.each do |room| %>
     <%= render room %>
-    <p>
+      <p>
       <%= link_to "Show this room", houses_path %>
-    </p>
+      </p>
   <% end %>
 </div>
-

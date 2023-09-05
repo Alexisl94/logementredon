@@ -108,6 +108,30 @@
 }
 
 
+.banner_two {
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.banner_two h1 {
+  margin: 0;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 3px rgba(105, 105, 105, 0.2);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.banner_two p {
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.658);
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
 .button-homepage {
   // justify-content: space-between;
   background: rgba(78, 180, 78, 0.514);
@@ -184,10 +208,11 @@
 
 .element-button {
   font-weight: 400;
-  border: solid 0.3px black;
+  border: solid 2px black;
   outline: 0;
   padding: 0.5rem 2rem;
   font-size: 0.3rem;
+  text-shadow: 1px black;
   letter-spacing: .04rem;
   background-color: rgba(78, 180, 78, 0.514);
   border-radius: .35rem;
@@ -223,7 +248,7 @@
 
 .contact-us {
   justify-self: center;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .homepage-div-green {
@@ -232,4 +257,33 @@
   background: rgba(164, 255, 164, 0.233);
   padding-top: 20px;
   padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 20px;
+}
+
+
+.homepage-div-one {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 20px;
+}
+
+.homepage-div-two {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 20px;
+}
+
+.homepage-div-three {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.map-placement {
+  margin: auto;
 }

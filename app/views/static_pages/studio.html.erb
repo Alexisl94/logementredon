@@ -1,0 +1,99 @@
+<div class="banner_two">
+<div class="container-title">
+<h1>Les studios 🏡</h1>
+<p>Clique sur les cartes pour voir les studios !</p>
+</div>
+</div>
+
+<style>
+  .clickable {
+    cursor: pointer; /* Change le curseur en main lorsque la carte est survolée */
+  }
+</style>
+
+  <div class="card-coloc-commune clickable" onclick="window.location.href='<%=commun_studios_path %>';" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://zupimages.net/up/23/36/ikbq.jpg'); background-size: cover;">
+    <h1>Parties communes</h1>
+  </div>
+  <div class="container-police">
+<br>
+<p style="text-align: center">⚠️ Les chambres sont meublées avec la description indiquée sur la droite, mais les décorations visibles sont celles des locataires actuels</p>
+</div>
+<br>
+<div class="container-coloc">
+  <div class="card-coloc clickable" onclick="window.location.href='<%= st1_path %>';" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://zupimages.net/up/23/36/gfoo.jpg'); background-size: cover;">
+    <h1>Studio 1</h1>
+    <h2>380€ TTC</h2>
+    <h2 style="color: red">Occupé</h2>
+  </div>
+
+  <div class="card-coloc clickable" onclick="window.location.href='<%= st2_path %>';" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://zupimages.net/up/23/36/ze9g.jpg'); background-size: cover;">
+    <h1>Studio 2</h1>
+    <h2>380€ TTC</h2>
+    <h2 style="color: red">Occupé</h2>
+  </div>
+
+  <div class="card-coloc clickable" onclick="window.location.href='<%= st3_path %>';" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://zupimages.net/up/23/36/zebv.jpg'); background-size: cover;">
+    <h1>Studio 3</h1>
+    <h2>380€ TTC</h2>
+    <h2 style="color: red">Occupé</h2>
+  </div>
+
+  <div class="card-coloc clickable" onclick="window.location.href='<%= st4_path %>';" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://zupimages.net/up/23/36/x670.jpg'); background-size: cover;">
+    <h1>Studio 4</h1>
+    <h2>380€ TTC</h2>
+    <h2 style="color: red">Occupé</h2>
+  </div>
+
+  <div class="card-coloc" onclick="window.location.href='<%= st5_path %>';" style="background-color: grey">
+    <h1>Studio 5</h1>
+    <h2>380€ TTC</h2>
+    <h2 style="color: black">Indisponible pour le moment</h2>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<style>
+  /* Ajouter des styles CSS pour mobile ici */
+
+  /* Pour changer l'ordre des éléments sur les appareils mobiles */
+  @media (max-width: 767px) {
+    .card-coloc-commune,
+    .card-coloc {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 50px;
+      margin: 0 auto;
+      width: 250px; /* Largeur des cartes individuelles à 100% pour qu'elles remplissent la colonne */
+      display: block;
+    }
+
+    .container-coloc {
+      grid-template-columns: 1fr;
+      /* display: block; */
+    }
+
+    .container-title h1 {
+      font-size: 24px;
+    }
+
+    .container-title p {
+      font-size: 12px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    /* Styles supplémentaires pour d'autres éléments mobiles ici */
+
+    /* Changez flex-direction à column pour empiler les éléments verticalement */
+    .grid-container {
+      flex-direction: column;
+    }
+
+    .container-police p {
+      font-size: 12px;
+    }
+  }
+</style>

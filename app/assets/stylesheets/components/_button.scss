@@ -6,7 +6,7 @@ $color-bg: white;
 $offset: .5rem;
 $transition: .3s;
 
-button {
+.button-home {
   font-weight: 400;
   border: solid $border-width $color;
   outline: 0;
@@ -34,7 +34,7 @@ button {
   }
 }
 
-button.style-1 {
+.button-home.style-1 {
   &::after {
      width: 90%;
      height: 90%;
@@ -49,7 +49,7 @@ button.style-1 {
   }
 }
 
-button.style-2 {
+.button-home.style-2 {
   &::after {
       top: $offset;
       left: $offset;
@@ -64,7 +64,7 @@ button.style-2 {
   }
 }
 
-button.style-3 {
+.button-home.style-3 {
   &::after {
     border: 0;
       box-shadow: 0px 0px 0px $border-width $color;
@@ -82,7 +82,7 @@ button.style-3 {
   }
 }
 
-button.style-4 {
+.button-home.style-4 {
   &::after {
       border: 0;
       box-shadow: 0px 0px 0px $border-width $color;
@@ -100,7 +100,7 @@ button.style-4 {
   }
 }
 
-button.style-5 {
+.button-home.style-5 {
    &::after {
     border: 0;
      box-shadow: 0px 0px 0px $border-width $color;
@@ -122,4 +122,14 @@ button.style-5 {
   justify-content: space-around;
   margin-left: 30px;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.align-elements {
+margin: auto;
 }

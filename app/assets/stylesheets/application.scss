@@ -7,6 +7,10 @@
 @import "bootstrap";
 @import "font-awesome";
 
+@import "leaflet/dist/leaflet.css"; // Le chemin peut varier selon l'emplacement de votre fichier Leaflet CSS
+
+
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+

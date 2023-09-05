@@ -1,4 +1,3 @@
-
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://static.wixstatic.com/media/9f5c91_8621987c84f247f38a24e0805d0c0152~mv2.jpg/v1/crop/x_0,y_106,w_1600,h_484/fill/w_1089,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/redon-1718_-_e-_berthier_edited.jpg);">
 <div class="container-title">
     <h1>ALCAMAYA</h1>
@@ -6,16 +5,16 @@
 </div>
 </div>
 
-<div class="homepage-div" style="display: grid; grid-template-columns: 8fr 4fr; gap: 20px;">
+<div class="homepage-div-one">
     <div class="homepage-div-text">
       <h2>Découvrez nos chambres et studios</h2>
       <p>Dans des logements fraichements refait à neuf, nous proposons une séléctions de chambres et studios sur un grand terrain dans Redon. La thématique : un logement de qualité, un cadre de vie agréable et des locataires respectueux les uns des autres et désireux de faire des rencontres !</p>
     </div>
 
 
-  <div class="button-space" style="display: flex; flex-direction: column; align-items: center;">
-  <button class="style-5">Cliquez ici pour voir nos logements</button>
-  <button class="style-5">Cliquez ici pour nous contacter</button>
+  <div class="button-space">
+  <button class="button-home style-5" onclick="window.location.href='<%= houses_path %>'">Voir nos logements</button>
+  <button class="button-home style-5" onclick="window.location.href='<%= contact_path %>'">Nous contacter</button>
   </div>
 </div>
 
@@ -46,6 +45,8 @@
           <p>TV HD et abonnement Netflix*</p>
         </div>
 
+
+
         <div class="logo-home">
           <i class="fa-solid fa-house-user fa-2xl" style="color: #56995e;"></i>
           <p>Logement éligible APL</p>
@@ -58,15 +59,15 @@
   </div>
 </div>
 
-<div class="homepage-div" style="display: grid; grid-template-columns: 6fr 6fr; gap: 20px;">
+<div class="homepage-div-two">
     <div class="homepage-div-text-need">
-      <div class="element-button"><h3>Inclus dans la location</h3></div>
+      <div class="element-button"><h2 style="font-size: 20px;">Inclus dans la location</h2></div>
       <p>L'ensemble des services précédents sont inclus dans le loyer mensuel indiqué par chambre.</p>
       <p>Les services mentionnés avec un "*" ne sont pas inclus dans les studios.</p>
       <p>Les baux locatifs sont à titre individuel, chaque locataire aura son contrat, il n'y pas de solidarité entre les contrats.</p>
     </div>
     <div class="homepage-div-text-need">
-      <div class="element-button"><h3>Ce que nous demandons</h3></div>
+      <div class="element-button"><h2 style="font-size: 20px;">Ce que nous demandons</h2></div>
       <p>Nous demandons un dossier incluant les éléments suivants :</p>
       <ul>
         <li><strong>Document d'identité</strong></li>
@@ -80,12 +81,95 @@
     </div>
 </div>
 
-<div class="homepage-div-green" style="display: grid; grid-template-columns: 6fr 6fr; gap: 20px;">
+
+<div class="homepage-div-green">
   <div class="contact-us">
     <h2>Contactez nous !</h2>
     <p style="text-align: center;">Mail : alcamaya.contact@gmail.com</p>
   </div>
-  <div>
-  <a href="https://www.google.com/maps/place/Ti-Gar+Redon/@47.6519675,-2.0881564,15z/data=!4m6!3m5!1s0x480f9c0e60fb9fa3:0x69270737af0dea09!8m2!3d47.6519675!4d-2.0881564!16s%2Fm%2F0crgkcc?entry=ttu"><img class="map-redon" src="https://zupimages.net/up/23/29/2trm.png" alt="" /></a>
+  <div class="map-placement">
+  <a href="https://www.google.com/maps/place/Ti-Gar+Redon/@47.6519675,-2.0881564,15z/data=!4m6!3m5!1s0x480f9c0e60fb9fa3:0x69270737af0dea09!8m2!3d47.6519675!4d-2.0881564!16s%2Fm%2F0crgkcc?entry=ttu"><img class="map-redon" src="https://zupimages.net/up/23/29/2trm.png" alt=""></a>
   </div>
 </div>
+
+<style>
+@media (max-width: 767px) {
+    /* Ajoutez vos styles ici pour l'affichage sur les écrans plus petits */
+
+    .homepage-div-one {
+      display: block; /* Remplacer la disposition en grille par un affichage en bloc */
+    }
+
+    .homepage-div-text {
+      margin: auto;
+    }
+
+    .button-space {
+        text-align: center; /* Centrer les boutons */
+        margin-top: 20px; /* Ajouter un espace entre les boutons */
+        /* text-align: center; */
+        margin-left: 0;
+    }
+
+    .logo-display-green {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px; /* Ajoutez un espacement entre les éléments si nécessaire */
+    }
+
+    .logo-home {
+      margin-left: 20px;
+      /* margin-bottom: 20px;  */
+    }
+
+    .homepage-div-two {
+      display: block;
+    }
+
+    .homepage-div-text-need {
+      margin: auto;
+    }
+
+    .homepage-div-green {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      height: 100%%;
+    }
+
+    .contact-us {
+      margin: auto;
+    }
+
+    .map-redon {
+      width: 95%;
+      height: 100%;
+      /* margin: auto, */
+      display: block;
+      justify-content: center;
+      align-items: center;
+      /* height: 100%; */
+      margin-top: 0;
+      margin: auto;
+      }
+      /* Vous pouvez également ajuster la taille de la police, la marge, etc., pour une meilleure lisibilité sur les écrans plus petits. */
+    /* .map-placement {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin-top: 0;
+      } */
+      /* Exemple d'ajustement de la taille de police pour les titres */
+      .homepage-div h2 {
+          font-size: 24px; /* Ajuster la taille de police selon vos besoins */
+      }
+
+      /* Exemple d'ajustement de la taille de police pour les paragraphes */
+      .homepage-div p {
+          font-size: 16px; /* Ajuster la taille de police selon vos besoins */
+      }
+
+      /* Ajoutez d'autres styles CSS au besoin pour personnaliser davantage votre mise en page pour les écrans plus petits */
+  }
+</style>

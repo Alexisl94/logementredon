@@ -13,7 +13,7 @@
 
 .navbar-alcamaya {
   // justify-content: space-between;
-  background: rgba(76, 241, 76, 0.514);
+  background: rgba(213, 255, 213, 0.514);
   display: flex;
   color: black;
   font-size: 14px;
@@ -21,12 +21,15 @@
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: space-around;
-  width: 80%;
+  width: 100%;
   justify-self: center;
   margin-left: auto;
   margin-right: auto;
   border-radius: 2px;
-  border-bottom: 1px solid green;
+  border-bottom: 2px solid rgb(0, 66, 9);
+  // border-left: 2px solid rgb(0, 0, 0);
+  // border-right: 2px solid rgb(0, 0, 0);
+  transition: background-color 0.3s ease; /* Ajout de la transition */
 }
 
 .navbar-alcamaya a {
@@ -37,22 +40,13 @@
   color: black; /* Définit la couleur des liens déjà visités */
 }
 
-.footer-alcamaya {
-  background: rgba(76, 241, 76, 0.514);
-  display: flex;
-  color: black;
-  font-size: 14px;
-  text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  justify-content: space-around;
-  width: 80%;
-  justify-self: center;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 2px;
-  border-top: 1px solid green;
+.navbar-alcamaya a:hover {
+  transform: scale(1.2); /* Zoom au survol */
+  color: #036919; /* Changement de couleur au survol */
+  font-weight: 500;
 }
+
+
 
 // .logo-home {
 //   display: flex;
@@ -174,4 +168,14 @@
 
 .column p {
   margin-left: 10px;
+}
+
+.container-coloc {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  // width: 70%;
+  // height: 90%;
+  margin: 0 auto;
 }

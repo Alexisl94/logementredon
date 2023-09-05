@@ -1,12 +1,70 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Houses</h1>
-
-<div id="houses">
-  <% @houses.each do |house| %>
-    <%= render house %>
-    <p>
-      <%= link_to "Show this house", house %>
-    </p>
-  <% end %>
+<div class="banner_two">
+<div class="container-title">
+    <h1>Nos logements</h1>
+    <p>Location & Colocation</p>
 </div>
+</div>
+
+
+<div class="grid-container">
+  <div class="house-category" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(https://zupimages.net/up/23/35/wl92.jpg)">
+      <h1>La Colocation 🏡</h1>
+      <h2>Une grande maison convivial ou règne la bonne ambiance mais aussi le respect de la vie privée</h2>
+      <div style="display: flex; justify-content: center; align-items: center">
+      <button class="button-home style-5" onclick="window.location.href='/coloc'">Voir les chambres</button>
+      </div>
+  </div>
+
+  <div class="house-category" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://zupimages.net/up/23/35/tf3o.jpg');">
+      <h1>Les studios 🏘️</h1>
+      <h2>Des petits studios très calmes et disposant d'un accès jardin en direct</h2>
+      <div style="display: flex; justify-content: center; align-items: center">
+      <button class="button-home style-5" onclick="window.location.href='/studio'">Voir les studios</button>
+      </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<style>
+  /* Ajouter des styles CSS pour mobile ici */
+
+  /* Pour changer l'ordre des éléments sur les appareils mobiles */
+  @media (max-width: 767px) {
+    .grid-container {
+      display: block;
+      order: 0; /* Changez l'ordre à 2 pour placer le carrousel en dessous du texte */
+    }
+
+    .container-title h1 {
+      font-size: 24px;
+    }
+
+    .container-title p {
+      font-size: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .carousel-page p {
+      font-size: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    /* Styles supplémentaires pour d'autres éléments mobiles ici */
+
+    /* Changez flex-direction à column pour empiler les éléments verticalement */
+    .grid-container {
+      flex-direction: column;
+    }
+  }
+</style>

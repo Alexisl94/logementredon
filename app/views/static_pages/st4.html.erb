@@ -1,0 +1,89 @@
+<div>
+<div class="banner_two">
+<div class="container-title">
+<h1>Studio 4</h1>
+<p>"Le plus autonome"</p>
+</div>
+</div>
+
+<div class="carousel-page">
+  <div id="carouselExampleIndicators" class="carousel slide my-carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://zupimages.net/up/23/36/x670.jpg" class="d-block w-100" alt="st4p1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://zupimages.net/up/23/36/lehg.jpg" class="d-block w-100" alt="st4p2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://zupimages.net/up/23/36/e5al.jpg" class="d-block w-100" alt="st4p3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div>
+  <p>Le studio 1 mesure <strong>10m²</strong> et dispose :<p>
+  <ul>
+  <p><i class="fa-solid fa-check" style="color: #000000;"></i> Un lit simple </p>
+  <p><i class="fa-solid fa-check" style="color: #000000;"></i> Une kitchenette </p>
+  <p><i class="fa-solid fa-check" style="color: #000000;"></i> Une salle de bain private </p>
+  <p><i class="fa-solid fa-check" style="color: #000000;"></i> Un bureau </p>
+  <p><i class="fa-solid fa-check" style="color: #000000;"></i> Des rangements adéquats </p>
+  <p><i class="fa-solid fa-check" style="color: #000000;"></i> Un grand miroir </p>
+  <p><i class="fa-solid fa-check" style="color: #000000;"></i> Table et lampe de chevet </p>
+  </ul>
+
+  <p><strong>350€ TCC* (voir page Beaux et services)</strong></p>
+  <p style="color: red"><strong>Occupé jusqu'au 31/12/2023</strong></p>
+  <div class="button-coloc-green">
+  <button class="button-home style-5" onclick="window.location.href='<%= contact_path %>'">Nous contacter</button>
+  <button class="button-home style-5" onclick="window.location.href='<%= studio_path %>'">Revenir aux studios</button>
+  </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<style>
+  /* Ajouter des styles CSS pour mobile ici */
+
+  /* Pour changer l'ordre des éléments sur les appareils mobiles */
+  @media (max-width: 767px) {
+    .carousel-page {
+      display: block;
+      order: 0; /* Changez l'ordre à 2 pour placer le carrousel en dessous du texte */
+    }
+
+    .container-title h1 {
+      font-size: 24px;
+    }
+
+    .container-title p {
+      font-size: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+      .carousel-page p {
+      font-size: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    /* Styles supplémentaires pour d'autres éléments mobiles ici */
+  }
+</style>
