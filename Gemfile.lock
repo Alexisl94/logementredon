@@ -145,6 +145,7 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.3-x86_64-linux)
       racc (~> 1.4)
+    pg (1.5.4)
     popper_js (2.11.7)
     puma (5.6.6)
       nio4r (~> 2.0)
@@ -243,6 +244,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   leaflet-rails
+  pg (~> 1.5, >= 1.5.4)
   puma (~> 5.0)
   rails (~> 7.0.6)
   sassc-rails
