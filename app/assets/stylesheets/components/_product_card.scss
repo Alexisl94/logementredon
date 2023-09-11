@@ -61,6 +61,10 @@
   margin: 10px;
   width: 600px; /* Largeur des cartes individuelles à 100% pour qu'elles remplissent la colonne */
   position: relative;
+  margin-left: auto;
+  margin-right: auto; /* Déplace horizontalement l'élément au centre */
+  text-align: center; /* Centre le contenu à l'intérieur de la colonne */
+
 }
 
 .card-coloc-commune {
