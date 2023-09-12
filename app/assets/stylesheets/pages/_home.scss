@@ -33,10 +33,11 @@ html {
   padding: 0;
 }
 body {
-  // height: 100%;
-  display:table;
-  // flex-direction: column;
-  width: 100%;
+  min-height: 100vh; /* Le corps de la page prendra au moins 100% de la hauteur de la fenêtre. */
+  margin: 0; /* Assurez-vous qu'il n'y a pas de marges pour éviter un espace indésirable. */
+  padding: 0; /* Assurez-vous qu'il n'y a pas de remplissage indésirable. */
+  display: flex;
+  flex-direction: column;
 }
 // .content {
 //   padding: 125px;
@@ -58,7 +59,7 @@ body {
   justify-self: center;
   justify-content: center;
   margin-left: auto;
-  margin-top: 20px;
+  margin-top: auto;
   margin-right: auto;
   border-radius: 2px;
   border-top: 1px solid rgb(0, 66, 9);
