@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'beaux_et_services', to: 'static_pages#beaux_et_services'
   get 'coloc', to: 'static_pages#coloc'
   get 'studio', to: 'static_pages#studio'
+  get 'appart', to: 'static_pages#appart'
   get 'ch1', to: 'static_pages#ch1'
   get 'ch2', to: 'static_pages#ch2'
   get 'ch3', to: 'static_pages#ch3'
