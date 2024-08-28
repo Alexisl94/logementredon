@@ -19,6 +19,10 @@ Rails.application.routes.draw do
   get 'st4', to: 'static_pages#st4'
   get 'st5', to: 'static_pages#st5'
   get 'commun_studios', to: 'static_pages#commun_studios'
+  get 'ach1', to: 'static_pages#ach1'
+  get 'ach2', to: 'static_pages#ach2'
+  get 'ach3', to: 'static_pages#ach3'
+  get 'commun_appart', to: 'static_pages#commun_appart'
   resources :houses do
     resources :rooms
   end
